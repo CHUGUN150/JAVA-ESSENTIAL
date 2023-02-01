@@ -1,4 +1,4 @@
-package Task3;
+package Lesson1.Task3;
 
 public class Computer {
     int RAM;

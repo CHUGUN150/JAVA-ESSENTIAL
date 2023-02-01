@@ -1,4 +1,4 @@
-package Task2;
+package Lesson1.Task2;
 
 public class Tilte {
     String title;

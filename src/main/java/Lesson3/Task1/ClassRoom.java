@@ -1,12 +1,23 @@
 package Lesson3.Task1;
 
 public class ClassRoom {
-    Pupil[] arrayPupil;
+    Pupil[] arrayPupil = new Pupil[4];
 
-    ClassRoom(Pupil pupil1,Pupil pupil2){
-        arrayPupil = new Pupil[]{pupil1,pupil2};
+    ClassRoom(Pupil ... pupil){
+        for(int i =0;i<pupil.length;i++){
+            arrayPupil[i] = pupil[i];
+        }
     }
-    ClassRoom(Pupil pupil1,Pupil pupil2,Pupil pupil3){
-        arrayPupil = new Pupil[]{pupil1,pupil2,pupil3};
+
+    void print(){
+        for (int i = 0; i < arrayPupil.length; i++) {
+            if (arrayPupil[i] != null) {
+                arrayPupil[i].study();
+                arrayPupil[i].read();
+                arrayPupil[i].write();
+                arrayPupil[i].relax();
+            }
+            else {break;}
+        }
     }
 }

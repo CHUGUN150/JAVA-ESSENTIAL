@@ -1,9 +1,7 @@
 package Lesson3.Task2;
 
 public class Vehicle {
-    int height;
-    int passPlaces;
-    String port;
+    String coordinates;
     int year;
     int cost;
     int speed;

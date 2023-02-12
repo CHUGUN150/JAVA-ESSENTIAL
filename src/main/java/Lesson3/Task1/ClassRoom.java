@@ -9,7 +9,7 @@ public class ClassRoom {
         }
     }
 
-    void print(){
+    void PrintAllPupilsInfo(){
         for (int i = 0; i < arrayPupil.length; i++) {
             if (arrayPupil[i] != null) {
                 arrayPupil[i].study();

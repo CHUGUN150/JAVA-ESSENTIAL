@@ -6,11 +6,11 @@ public class Main {
         ClassRoom classRoom2 = new ClassRoom(new ExcellentPupil(),new GoodPupil(),new BadPupil());
         ClassRoom classRoom3 = new ClassRoom(new ExcellentPupil(),new GoodPupil(),new BadPupil(),new GoodPupil());
 
-        classRoom1.print();
+        classRoom1.PrintAllPupilsInfo();
         System.out.println();
-        classRoom2.print();
+        classRoom2.PrintAllPupilsInfo();
         System.out.println();
-       classRoom3.print();
+        classRoom3.PrintAllPupilsInfo();
         System.out.println();
     }
 }

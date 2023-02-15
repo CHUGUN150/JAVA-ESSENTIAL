@@ -7,16 +7,18 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         AbstractHandler handler;
         System.out.println("Enter document type:");
-        String type = scan.next();
+        String document = scan.next();
+        String type =  document.substring(document.lastIndexOf(".")+1);
         switch (type){
-            case "XML": handler = new XMLHandler();
+            case "xml": handler = new XMLHandler();
                 break;
-            case "TXT": handler = new TXTHandler();
+            case "txt": handler = new TXTHandler();
                 break;
-            case "DOC": handler = new DOCHAndler();
+            case "doc": handler = new DOCHAndler();
                 break;
-            default: handler = new XMLHandler();
-                System.out.println("Default file");
+            default:
+                System.out.println("Error! Document of this format cannot be continued.");
+                return;
         }
         handler.open();
         handler.create();
